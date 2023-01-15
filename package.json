@@ -22,6 +22,13 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20221111.1",
+    "@types/postcss-preset-env": "^7.7.0",
+    "autoprefixer": "^10.4.13",
+    "next-compose-plugins": "^2.2.1",
+    "postcss": "^8.4.21",
+    "postcss-preset-env": "^7.8.3",
+    "sass": "^1.57.1",
+    "tailwindcss": "^3.2.4",
     "vitest": "^0.27.1",
     "wrangler": "^2.7.1"
   }
