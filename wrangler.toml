@@ -1,0 +1,11 @@
+compatibility_date = "2023-01-15"
+main = "src/index.ts"
+
+[env.dev]
+name = "imati-dev"
+workers_dev = true
+
+[env.production]
+name = "imati-dev-production"
+route = "https://imati.dev/"
+workers_dev = false
