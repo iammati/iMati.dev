@@ -3,14 +3,16 @@ import Head from 'next/head';
 import { AppInitialProps } from 'next/dist/shared/lib/utils';
 import Navigation from './Navigation';
 
+interface Props {
+    Component: any;
+    pageProps: any;
+};
+
 const startYear = 2023;
 const year = (new Date()).getFullYear();
 const copyright = year > startYear ? `${startYear}-${year}` : year;
 
-const Layout = (
-    Component: any,
-    pageProps: AppInitialProps,
-): JSX.Element => {
+const Layout = ({ Component, pageProps }: Props): JSX.Element => {
     return (
         <>
             <Head>
